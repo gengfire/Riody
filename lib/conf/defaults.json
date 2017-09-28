@@ -1,0 +1,43 @@
+{
+  "CNAME": "index",
+  "FNAME": "index",
+  "SUFFIX": ".html",
+  "CACHE_DIR": "cache",
+  "CONTENT_TYPE": "html",
+  "CONTROLLER_DIR": "controller",
+  "VIEWS_DIR": "views",
+  "CONTROLLER_SUFFIX": "Controller",
+  "ACTION_SUFFIX": "Action",
+  "STATIC_DIR": "/assets",
+  "cache": false,
+  "tpl": true,
+  "SESSIONKEY" :"ACCESSTOKEN",
+  "STATIC_TYPE": {
+    "css": "text/css",
+    "gif": "image/gif",
+    "html": "text/html",
+    "ico": "image/x-icon",
+    "jpeg": "image/jpeg",
+    "jpg": "image/jpeg",
+    "js": "text/javascript",
+    "json": "application/json",
+    "pdf": "application/pdf",
+    "png": "image/png",
+    "svg": "image/svg+xml",
+    "swf": "application/x-shockwave-flash",
+    "tiff": "image/tiff",
+    "txt": "text/plain",
+    "wav": "audio/x-wav",
+    "wma": "audio/x-ms-wma",
+    "wmv": "video/x-ms-wmv",
+    "xml": "text/xml"
+  },
+  "RES_CODE": {
+    "200": "Succeeded",
+    "201": "Failed",
+    "202": "Invalid Param",
+    "401": "Authentication-required",
+    "403": "Forbidden"
+  },
+  "NOT_FOUND": "<center><h1>404 Not Found</h1></center><hr><center>Riody 1.3.0</center>"
+}

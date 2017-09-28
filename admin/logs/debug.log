@@ -1,0 +1,17 @@
+{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","index":0}
+{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","index":0}
+{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","index":0}
+[{"username":"admin"}]
+[{"username":"admin"}]
+[{"username":"admin"}]
+[{"username":"admin"}]
+[{"username":"admin"}]
+[{"username":"admin"}]
+[{"username":"admin"}]
+[{"username":"admin"}]
+[{"username":"admin"}]
+[{"username":"admin"}]
+222: {"username":"admin"}
+11746 9:54:45: {"username":"admin"}
+2017-4-6 9:55:34: {"username":"admin"}
+2017-4-6 9:58:15> {"username":"admin"}

@@ -1,0 +1,25 @@
+{{include '../common/header'}}
+<div class="wrap">
+  <table>
+		<tr>
+			<th>id</th>
+			<th>title</th>
+			<th>cat_name</th>
+			<th>option</th>
+		</tr>
+		{{each list as li}}
+		<tr>
+			<td>{{li.id}}</td>
+			<td>{{li.title}}</td>
+			<td>{{li.cat_name}}</td>
+			<td><a href="/post/edit/{li.id}">Edit</a><i class="red mgl10" onclick="deletePost({{li.id}})">Del</i></td>
+		</tr>
+		{{/each}}
+  </table>
+	<script type="text/javascript">
+		function deletePost(id) {
+
+		}
+	</script>
+</div>
+{{include '../common/footer'}}

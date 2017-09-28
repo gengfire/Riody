@@ -1,0 +1,21 @@
+{{include '../common/header'}}
+<div class="main">
+	<div class="w720 m-auto">
+		 <ul>
+	    {{each list as li}}
+	      <li class="tc">
+	      	<h1 class="s26"><a class="hove-line" href="">{{li.title}}</a></h1>
+	      	<p class="s12 grey mgt3">Date: {{li.add_time | dateFormat: 'yyyy-MM-dd'}}
+	      		<i class="pd08">|</i>Cat: <a href="/post/cat/{{li.cat_id}}">{{li.cat_name}}</a><i class="pd08">|</i>Tag: <a href="/">css</a>
+	      	</p>
+	      	<div class="s16 dark mgt50 tl">{{li.content | strLen: 300}}</div>
+	      	<div class="mgt50">
+						<a href="" class="btn">Read More »</a>
+	      	</div>
+	      	<div class="art-bottom"><div></div></div>
+	      </li>
+	    {{/each}}
+	  </ul>
+	</div>
+</div>
+{{include '../common/footer'}}

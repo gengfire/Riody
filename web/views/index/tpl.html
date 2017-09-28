@@ -1,0 +1,20 @@
+{{include '../common/header'}}
+  <div>{name} <button>GET INFO</button></div>
+  <hr/>
+  <a href="{{'/index/detail/1' | urlFix}}">Link: {{'/index/detail/1' | urlFix}}</a>
+  <div id="email"></div>
+  <script>
+    $('button').click(function(){
+      $.post('/user/info', {
+        token: 'fcc6134deb05a36adc6a988235eb86c6'
+      }, function(ret){
+        if (ret.status === 200) {
+          $('#email').html(ret.data.email);
+        } else {
+          alert(ret.msg);
+        }
+      }, 'json');
+    });
+  </script>
+</body>
+</html>

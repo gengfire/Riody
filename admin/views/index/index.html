@@ -1,0 +1,19 @@
+{{include '../common/top_menu'}}
+{{include '../common/left_menu'}}
+<div class="frameBox">
+  <iframe id="mainFrame" name="mainframe"></iframe>
+</div>
+<script src="//cdn.bootcss.com/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript">
+  !function(){
+  	var path = location.hash && location.hash.slice(1) || $('.left-menu a:first').attr('href');
+  	$('#mainFrame').attr('src', path);
+  }();
+
+	$('.left-menu a').click(function(){
+		document.title = $(this).text();
+		location.hash = $(this).attr('href');
+	});
+</script>
+</body>
+</html>
