@@ -4,7 +4,7 @@ module.exports = class Controller extends authController {
   
   infoAction(req, res) {
     this.exesql(`SELECT username,email FROM user WHERE id='${this.uid}'`, ret => {
-      this.json('200', ret[0]);
+      this.json(ret[0]);
     });
   }
 
